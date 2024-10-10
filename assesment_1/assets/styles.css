@@ -116,9 +116,9 @@ main {
 }
 
 section img {
-  width: 100%;
+  width: 40%;
   height: auto;
-  margin-bottom: 10px;
+  justify-content: space-between;
 }
 
 article {
@@ -128,6 +128,15 @@ article {
 section {
   flex: 1;
   margin: 10px; 
+}
+
+/* Set the flex-basis for sections to control the width ratio */
+section:nth-child(1) {
+  flex: 3; /* Welcome section takes up 3 parts of the available space */
+}
+
+section:nth-child(2) {
+  flex: 2; /* Favourite Photos section takes up 2 parts of the available space */
 }
 
 aside {
