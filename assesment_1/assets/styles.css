@@ -88,10 +88,10 @@ nav ul {
   list-style-type: none;
   flex: 2;
   display: flex;
+  justify-content: space-around;
 }
 
 nav li {
-  display: inline;
   text-align: center;
   flex: 1;
 }
@@ -111,10 +111,23 @@ nav a, nav span {
 
 main {
   display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
 }
 
-article, section {
+section img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+article {
   flex: 4;
+}
+
+section {
+  flex: 1;
+  margin: 10px; 
 }
 
 aside {
